@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      xmlns:sec=https://www.thymeleaf.org/thymeleaf-extras-springsecurity5>
+
+<link rel="stylesheet" type="text/css"
+      href="webjars/bootstrap/4.3.1/css/bootstrap.min.css" />
+<script src="webjars/jquery/3.5.1/jquery.min.js"></script>
+<script type="text/javascript"
+        src="webjars/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<script src="webjars/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" type="text/css"
+      href="webjars/bootstrap/4.3.1/css/bootstrap.min.css" />
+<script src="webjars/jquery/3.5.1/jquery.min.js"></script>
+
+<link rel="stylesheet" type="text/css" th:href="@{/assets/css/style.css}">
+<head>
+  <meta charset="utf-8">
+    <title>Title</title>
+
+</head>
+<body>
+<section id="sidebar">
+  <a href="#" class="brand">
+    <img th:src="@{/assets/images/stud_net.jpeg}" width="73" height="73" class="rounded-circle me-2">
+    <span class="text">Tasky</span>
+  </a>
+  <ul class="side-menu top">
+    <li class="active">
+      <a  href="">
+        <i class='bx bxs-dashboard' ></i>
+        <span class="text">Dashboard</span>
+      </a>
+    </li>
+    <li>
+      <a href="">
+        <i class='bx bxs-shopping-bag-alt' ></i>
+        <span class="text">Projects</span>
+      </a>
+    </li>
+
+    <li>
+      <a href="listeUsers"  >
+        <i class='bx bxs-group' ></i>
+        <span class="text">Users</span>
+      </a>
+    </li>
+    <li>
+      <a href="" >
+        <i class='bx bxs-group' ></i>
+        <span class="text">Tasks</span>
+      </a>
+    </li>
+  </ul>
+  <ul class="side-menu">
+    <li>
+      <a href="#">
+        <i class='bx bxs-cog' ></i>
+        <span class="text">Settings</span>
+      </a>
+    </li>
+    <ul >
+      <li >
+        <a >
+          <span ></span>
+        </a>
+        <div>
+          <a
+             th:href="">login</a>
+          <a
+             > <i class='bx bxs-log-out-circle' ></i>
+            <span class="text">Logout</span></a>
+          <a href="">Profile</a>
+        </div></li>
+    </ul>
+
+  </ul>
+</section>
+
+<!-- CONTENT -->
+<section id="content">
+  <!-- NAVBAR -->
+  <nav>
+    <i class='bx bx-menu' ></i>
+    <a href="#" class="nav-link">Employees and Projects management system</a>
+    <form action="#">
+      <div class="form-input">
+        <input type="search" placeholder="Search...">
+        <button type="submit" class="search-btn"><i class='bx bx-search' ></i></button>
+      </div>
+    </form>
+
+    <input type="checkbox" id="switch-mode" hidden>
+    <label for="switch-mode" class="switch-mode"></label>
+    <a href="#" class="notification">
+      <i class='bx bxs-bell' ></i>
+      <span class="num">8</span>
+    </a>
+    <a href="#" class="profile">
+      <img th:src="@{https://avatars.githubusercontent.com/ml/497?s=82&v=4}">
+    </a>
+  </nav>
+  <!-- NAVBAR -->
+
+
+  <!-- MAIN -->
+  <main>
+
+
+    <section layout:fragment="Mycontent"></section>
+    </div>
+  </main>
+  <!-- MAIN -->
+</section>
+</body>
+</html>
